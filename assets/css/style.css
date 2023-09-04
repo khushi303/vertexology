@@ -240,7 +240,7 @@ div .btn_circle:hover svg path {
     padding-right: 7px;
 }
 
-.h-51 {
+.h-53 {
     height: 53px;
 }
 
@@ -256,8 +256,8 @@ div .btn_circle:hover svg path {
     opacity: 40%;
 }
 
-.mw-315 {
-    max-width: 315px !important;
+.mw-289 {
+    max-width: 289px !important;
 }
 
 .btn-submit {
@@ -265,7 +265,22 @@ div .btn_circle:hover svg path {
     height: 41px;
     border-radius: 47.434px;
     border: none;
+    z-index: 2;
     background: linear-gradient(134deg, #FF2801 -0.47%, #FF6500 90.6%), linear-gradient(96deg, #0075FF 1.34%, #00F 107.5%);
+}
+
+.btn-shadow2::after {
+    content: "";
+    position: absolute;
+    bottom: -9%;
+    right: -2%;
+    width: 104px;
+    height: 35px;
+    border-radius: 31px;
+    opacity: 0.5;
+    z-index: 1;
+    background: linear-gradient(95deg, #FF5001 6.18%, #DD4500 97.9%), #D9D9D9;
+    filter: blur(13.5px);
 }
 
 input::placeholder {
@@ -333,6 +348,10 @@ input::placeholder {
     top: 50%;
 }
 
+.cur-pointer {
+    cursor: pointer;
+}
+
 .rotate-90 {
     transform: rotate(-90deg);
 }
@@ -353,6 +372,10 @@ input::placeholder {
 
 .mw-633 {
     max-width: 633px;
+}
+
+.text_shadow1 {
+    text-shadow: 0px 3px 3.0395138263702393px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width:992px) {

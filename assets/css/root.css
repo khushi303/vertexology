@@ -5,8 +5,8 @@
     --fs-md: 20px;
     --fs-lg: 40px;
     --fs-xl: 38px;
-    --fs-xxl: 50px;
-    --fs-2xxl: 70px;
+    --fs-xxl: 40px;
+    --fs-2xxl: 60px;
     /* font-weight */
     --fw-400: 400;
     --fw-500: 500;
@@ -21,6 +21,7 @@
     --b-gray: #B2B2B2;
     --blackg: #404040;
 }
+
 
 @media (min-width:576px) {
     :root {
@@ -87,7 +88,7 @@
 
 @font-face {
     font-family: 'Gilroybold';
-    src: url(../font-family/gilroy/Gilroy-ExtraBold.ttf);
+    src: url(../font-family/gilroy/Gilroy-Black.ttf);
 }
 
 .ff-gilroybold {
@@ -96,7 +97,7 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url(../font-family/gilroy/Gilroy-Regular.ttf);
+    src: url(../font-family/gilroy/Gilroy-Medium.ttf);
 }
 
 .ff-gilroy {
@@ -105,7 +106,7 @@
 
 @font-face {
     font-family: 'Gilroymedium';
-    src: url(../font-family/gilroy/Gilroy-Medium.ttf);
+    src: url(../font-family/gilroy/Gilroy-ExtraBold.ttf);
 }
 
 .ff-gilroymedium {
