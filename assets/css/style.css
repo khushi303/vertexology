@@ -260,6 +260,10 @@ div .btn_circle:hover svg path {
     max-width: 289px !important;
 }
 
+.mh-586 {
+    max-height: 586px !important;
+}
+
 .btn-submit {
     width: 111px;
     height: 41px;
