@@ -7,6 +7,7 @@
     --fs-xl: 38px;
     --fs-xxl: 40px;
     --fs-2xxl: 60px;
+    --fs-3xxl: 66px;
     /* font-weight */
     --fw-400: 400;
     --fw-500: 500;
@@ -22,13 +23,13 @@
     --blackg: #404040;
 }
 
-
 @media (min-width:576px) {
     :root {
         /* font-size */
         --fs-xl: 38px;
-        --fs-xxl: 58px;
+        --fs-xxl: 40px;
         --fs-2xxl: 95px;
+        --fs-3xxl: 98px;
     }
 }
 
@@ -38,6 +39,16 @@
         --fs-xl: 45px;
         --fs-xxl: 65px;
         --fs-2xxl: 122.735px;
+        --fs-3xxl: 137.809px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1275px) {
+    :root {
+        --fs-xl: 45px;
+        --fs-xxl: 50px;
+        --fs-2xxl: 122.735px;
+        --fs-3xxl: 137.809px;
     }
 }
 
@@ -68,6 +79,10 @@
 
 .fs-2xxl {
     font-size: var(--fs-2xxl);
+}
+
+.fs-3xxl {
+    font-size: var(--fs-3xxl);
 }
 
 .fw-400 {

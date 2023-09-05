@@ -40,19 +40,31 @@
 </head>
 
 <body class="overflow-hidden">
-    <div>
-        <div id="preloder"
-            class="animation min-vh-100 w-100 bg-black position-fixed top-0 start-0 d-flex align-items-center justify-content-center z-index-3 duration_300 cur-pointer">
-            <img src="./assets/images/page-logo.png" alt="page-logo">
-        </div>
+    <div id="preloder"
+        class="animation min-vh-100 w-100 bg-black position-fixed top-0 start-0 d-flex align-items-center justify-content-center z-index-3 duration_300 cur-pointer">
+        <img src="./assets/images/page-logo.png" alt="page-logo">
     </div>
     <header class="header-bg-img min-vh-100 pt-4 d-flex flex-column" id="home">
-        <nav>
+        <nav class="">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between w-100">
                     <img src="./assets/images/page-logo.png" alt="page-logo">
+                    <ul class="list-unstyled mb-0 d-lg-flex d-none align-items-center gap-32 justify-content-center ">
+                        <li><a href="#home"
+                                class="text-decoration-none fs-2sm fw-500 white ff-gilroy nav_line position-relative text_shadow">Home</a>
+                        </li>
+                        <li><a href=" #about"
+                                class="text-decoration-none fs-2sm fw-500 white ff-gilroy nav_line position-relative text_shadow">About</a>
+                        </li>
+                        <li><a href=" #product"
+                                class="text-decoration-none fs-2sm fw-500 white ff-gilroy nav_line position-relative text_shadow">Products</a>
+                        </li>
+                        <li><a href="#contact"
+                                class="text-decoration-none fs-2sm fw-500 white ff-gilroy nav_line position-relative text_shadow">Contact
+                                Us</a></li>
+                    </ul>
                     <ul id="nav-icon"
-                        class="list-unstyled mb-0 d-flex align-items-center gap-32 mobile_view flex-column flex-lg-row justify-content-center">
+                        class="list-unstyled mb-0 d-flex align-items-center gap-32 mobile_view flex-column flex-lg-row justify-content-center d-lg-none">
                         <li><a href="#home" onclick="navfun()"
                                 class="text-decoration-none fs-2sm fw-500 white ff-gilroy nav_line position-relative text_shadow">Home</a>
                         </li>
@@ -78,7 +90,7 @@
         <div class="flex-grow-1 d-flex justify-content-center align-items-center">
             <div class="container">
                 <h2 class="mb-0 white fs-2xxl fw-900 ff-gilroybold lh-1 text-center text_shadow">3D Product</h2>
-                <h2 class="mb-0 white fs-2xxl fw-900 ff-gilroybold lh-1 text-center text_shadow">Animation</h2>
+                <h2 class="mb-0 white fs-3xxl fw-900 ff-gilroybold lh-1 text-center text_shadow">Animation</h2>
             </div>
         </div>
     </header>
@@ -107,7 +119,7 @@
                 </div>
             </div>
         </div>
-        <div class="spring-line2">
+        <div class="spring-line2 d-lg-block d-none">
             <svg width="92" height="71" viewBox="0 0 92 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.5">
                     <path
@@ -125,12 +137,12 @@
     </section>
     <section class="overflow-hidden pb-100 position-relative" id="product">
         <div class="container">
-            <div class="row pb-50">
+            <div class="row pb-50 justify-content-between">
                 <div class="col-md-7 col-12">
                     <p class="mb-0 ff-gilroybold fs-xxl fw-900 text-uppercase lh-1 ls-0 text_shadow">Our Portfolios
                     </p>
                 </div>
-                <div class="col-md-5 col-12 pt-4 pt-lg-0">
+                <div class="col-md-2 col-12 pt-4 pt-lg-0">
                     <div class="d-flex gap-3">
                         <div class="bg-border">
                             <button class="prev btn_circle d-flex align-items-center justify-content-center">
@@ -176,24 +188,24 @@
                 </div>
             </div>
             <div class="slider">
-                <div class="px-2">
+                <div class="px-2 animation1">
                     <img src="./assets/images/webp/slider-img-1.webp" alt="slider-img-1" class="w-100 h-100">
                 </div>
-                <div class="px-2">
+                <div class="px-2 animation1">
                     <img src="./assets/images/chair.gif" alt="slider-img-2" class="w-100 h-100 mh-586">
                 </div>
-                <div class="px-2">
+                <div class="px-2 animation1">
                     <img src="./assets/images/webp/slider-img-3.webp" alt="slider-img-3" class="w-100 h-100">
                 </div>
-                <div class="px-2">
+                <div class="px-2 animation1">
                     <img src="./assets/images/webp/slider-img-4.webp" alt="slider-img-4" class="w-100 h-100">
                 </div>
-                <div class="px-2">
+                <div class="px-2 animation1">
                     <img src="./assets/images/webp/slider-img-4.webp" alt="slider-img-4" class="w-100 h-100">
                 </div>
             </div>
         </div>
-        <div class="spring-line1">
+        <div class="spring-line1 d-lg-block d-none">
             <svg width="92" height="71" viewBox="0 0 92 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.5">
                     <path
@@ -223,7 +235,7 @@
                             iaculis
                             aenean
                         </h2>
-                        <p class="mb-0 fs-2sm fw-400 ff-gilroy white pb-60 mw-500">Tincidunt phasellus
+                        <p class="mb-0 fs-2sm fw-400 ff-gilroy white pb-lg-5 pb-4 mw-500">Tincidunt phasellus
                             id
                             imperdiet
                             lorem
@@ -237,7 +249,7 @@
                                 class="btn-contact ff-gilroy fs-2sm fw-700 white d-flex align-items-center justify-content-center text_shadow">Contact
                                 Us</button>
                         </div>
-                        <div class="spring-line">
+                        <div class="spring-line d-lg-block d-none">
                             <svg width="92" height="71" viewBox="0 0 92 71" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.5">
@@ -262,14 +274,14 @@
         <div class="container-fluid">
             <div class="row flex-column-reverse flex-lg-row">
                 <div
-                    class="col-lg-6 col-12 d-flex align-items-center justify-content-center py-lg-0 py-5 position-relative">
+                    class="col-lg-6 col-12 d-flex align-items-center justify-content-lg-center py-lg-0 py-5 position-relative">
                     <div>
                         <h2
                             class="mb-0 fs-xxl fw-900 bblack lh-sm ls-0 mw-536 ff-gilroybold text-uppercase text_shadow">
                             At tempor,
                             amet viverra
                             eu Quisque</h2>
-                        <p class="mb-0 fs-2sm fw-400 bblack lh-sm ls-0 mw-536 ff-gilroy pb-60">Faucibus
+                        <p class="mb-0 fs-2sm fw-400 bblack lh-sm ls-0 mw-536 ff-gilroy pb-lg-5 pb-4">Faucibus
                             pulvinar enim in
                             sagittis.
                             Aliquam libero dolor iaculis in aliquam. Cursus nibh enim
@@ -280,7 +292,7 @@
                                 class="btn_talk fs-2sm fw-700 ff-gilroymedium white d-flex align-items-center justify-content-center text_shadow">Talk
                                 To Me</button>
                         </div>
-                        <div class="spring-line1 d-none d-block">
+                        <div class="spring-line1 d-none d-lg-block">
                             <svg width="92" height="71" viewBox="0 0 92 71" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.5">
@@ -304,7 +316,7 @@
             </div>
         </div>
     </section>
-    <section class="bg_bblack" id="contact">
+    <section class="bg_bblack">
         <div class="container-fluid">
             <div class="row justify-content-between">
                 <div class="col-lg-6 col-12 p-0">
@@ -315,7 +327,7 @@
                         <h2 class="mb-0 fs-2sm fw-400 ff-gilroy white text-uppercase lh-1 ls-0">About me</h2>
                         <h2 class="mb-0 fs-lg fw-900 ff-gilroybold white text-uppercase lh-1 ls-0 pt-3">John Smith
                         </h2>
-                        <p class="mb-0 fs-2sm fw-400 ff-gilroy white lh-174 ls-0 pt-1 pb-60 mw-489">Euismod nunc
+                        <p class="mb-0 fs-2sm fw-400 ff-gilroy white lh-174 ls-0 pt-1 pb-lg-5 pb-4 mw-489">Euismod nunc
                             mauris
                             lacinia
                             sapien
@@ -330,7 +342,7 @@
                         <button
                             class="btn-cwm fs-2sm fw-700 white d-flex align-items-center justify-content-center">Contact
                             with Me</button>
-                        <div class="spring-line">
+                        <div class="spring-line d-lg-block d-none">
                             <svg width="92" height="71" viewBox="0 0 92 71" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.5">
@@ -351,7 +363,7 @@
             </div>
         </div>
     </section>
-    <footer class="position-relative bg_white">
+    <footer class="position-relative bg_white" id="contact">
         <div class="container">
             <div class="row pt-150 pb-100 position-relative justify-content-between">
                 <div class="col-lg-9 col-12">
@@ -362,7 +374,7 @@
                                 Utn
                                 vulputate
                                 rutrum bibend puru.</h2>
-                            <p class="mb-0 fs-2sm fw-400 mw-710 ff-gilroy bblack lh-174 pb-50 mw-633">
+                            <p class="mb-0 fs-2sm fw-400 mw-710 ff-gilroy bblack lh-174 pb-lg-5 pb-4 mw-633">
                                 Faucibus
                                 pulvinar enim in
                                 sagittis. Aliquam libero dolor iaculis in aliquam. Cursus nibh
@@ -389,7 +401,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-1 col-12 d-flex justify-content-between align-items-center pt-5 pt-lg-0">
+                <div class="col-lg-1 col-12 d-flex justify-content-center align-items-center pt-5 pt-lg-0">
                     <div class="d-flex align-items-center justify-content-end">
                         <div class="d-flex flex-lg-column flex-row gap-2">
                             <a href="https://www.instagram.com/accounts/login/" target="_blank"
@@ -486,7 +498,7 @@
         <span class="mb-0 fs-md fw-400 ff-gilroy bblack07 rotate-90 right-align d-none d-md-inline-block">Twitter
             /
             Facebook / Instagram</span>
-        <div class="spring-line3">
+        <div class="spring-line3 d-lg-block d-none">
             <svg width="76" height="59" viewBox="0 0 76 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.5">
                     <path
@@ -501,7 +513,7 @@
                 </g>
             </svg>
         </div>
-        <div class="spring-line">
+        <div class="spring-line d-lg-block d-none">
             <svg width="92" height="71" viewBox="0 0 92 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.5">
                     <path
