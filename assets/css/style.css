@@ -33,7 +33,7 @@
     height: 2px;
     width: 0;
     background-color: var(--white);
-    bottom: -4px;
+    bottom: -3px;
     left: 50%;
     transition: .3s linear;
     border-radius: 2px;
